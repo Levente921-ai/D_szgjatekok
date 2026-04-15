@@ -62,6 +62,10 @@ aside {
   grid-area: as;
 }
 
+nav li {
+  list-style: none;
+}
+
 .elso img {
   width: 100%;
 }
