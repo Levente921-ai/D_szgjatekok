@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  width: 70%;
+  margin: auto;
+}
+header {
+  grid-area: he;
+}
+
+nav {
+  grid-area: n;
+  background: rgb(65, 58, 58);
+}
+
+a:hover {
+  background-color: orangered;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid white;
+  padding: 5px;
+}
+
+article {
+  background-color: white;
+  grid-area: ar;
+}
+
+main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "he he"
+    "n n"
+    "ar as"
+    "f f";
+}
+
+.mukodj img {
+  max-width: 50%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: orange;
+  grid-area: f;
+}
+
+aside {
+  grid-area: as;
+}
+
+.elso img {
+  width: 100%;
+}
+
+body {
+  background-image: url(kepek/black.png);
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "he"
+      "n"
+      "ar"
+      "as"
+      "f";
+  }
+}
